@@ -4,26 +4,24 @@ class Splicectl < Formula
   url "https://github.com/splicemaahs/homebrew-utility.git"
   version "0.0.1"
 
-  def install
-    if Hardware::CPU.is_32_bit?
-      if OS.mac?
-        def install
-          bin.install "bin/darwin/386/splicectl"
-        end
-      elsif OS.linux?
-        def install
-          bin.install "bin/linux/386/splicectl"
-        end
+  if Hardware::CPU.is_32_bit?
+    if OS.mac?
+      def install
+        bin.install "bin/darwin/386/splicectl"
       end
-    else
-      if OS.mac?
-        def install
-          bin.install "bin/darwin/amd64/splicectl"
-        end
-      elsif OS.linux?
-        def install
-          bin.install "bin/linux/amd64/splicectl"
-        end
+    elsif OS.linux?
+      def install
+        bin.install "bin/linux/386/splicectl"
+      end
+    end
+  else
+    if OS.mac?
+      def install
+        bin.install "bin/darwin/amd64/splicectl"
+      end
+    elsif OS.linux?
+      def install
+        bin.install "bin/linux/amd64/splicectl"
       end
     end
   end

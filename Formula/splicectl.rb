@@ -3,7 +3,7 @@ class Splicectl < Formula
   homepage "https://github.com/splicemaahs/homebrew-utility"
   url "https://github.com/splicemaahs/homebrew-utility.git"
   version "0.0.10"
-  revision 2
+  revision 3
 
   if Hardware::CPU.is_32_bit?
     if OS.mac?

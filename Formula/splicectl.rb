@@ -28,13 +28,9 @@ class Splicectl < Formula
   end
 
   def caveats; <<~EOS
-    Currently the use of splicectl REQUIRES that KUBECONFIG environment 
-    variable be exported.
-
-    export KUBECONFIG=~/.kube/config
-
-    auto-selecting ~/.kube/config will be fixed in an upcoming update.
-
+    splicectl will look for the default ~/.kube/config configuration
+    file for Kubernetes.  It will also look at KUBECONFIG environment
+    variable to point to a specific Kubernetes config file.
   EOS
   end
 end

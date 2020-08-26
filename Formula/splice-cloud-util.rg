@@ -25,14 +25,12 @@ class SpliceCloudUtil < Formula
 
   def caveats; <<~EOS
     AWS wants a configuration file in ~/.aws/credentials in the standard format.
-        
     Azure wants a configuration file in ~/.azure/credentials with this format
         [default]
         subscription_id=
         client_id=
         secret=
         tenant=
-
     GCP wants the credential file from ~/.config/gcloud/credentials.db
   EOS
   end

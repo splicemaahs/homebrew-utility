@@ -6,11 +6,7 @@ class Splicectl < Formula
   revision 1
 
   if Hardware::CPU.is_32_bit?
-    if OS.mac?
-      def install
-        bin.install "bin/darwin/386/splicectl"
-      end
-    elsif OS.linux?
+    if OS.linux?
       def install
         bin.install "bin/linux/386/splicectl"
       end

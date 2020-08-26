@@ -3,7 +3,7 @@ class SpliceCloudUtil < Formula
   homepage "https://github.com/splicemaahs/homebrew-utility"
   url "https://github.com/splicemaahs/homebrew-utility.git"
   version "0.0.1"
-  revision 0
+  revision 1
 
   if Hardware::CPU.is_32_bit?
     if OS.linux?
@@ -34,7 +34,6 @@ class SpliceCloudUtil < Formula
         tenant=
 
     GCP wants the credential file from ~/.config/gcloud/credentials.db
-
   EOS
   end
 end

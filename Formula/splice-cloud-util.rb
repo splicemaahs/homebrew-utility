@@ -2,7 +2,7 @@ class SpliceCloudUtil < Formula
   desc "This is a collection of tools to help Splice Machine Cloud Engineers in daily life."
   homepage "https://github.com/splicemaahs/homebrew-utility"
   url "https://github.com/splicemaahs/homebrew-utility.git"
-  version "0.0.1"
+  version "0.0.2"
   revision 1
 
   if Hardware::CPU.is_32_bit?
